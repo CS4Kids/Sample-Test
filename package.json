@@ -1,0 +1,21 @@
+{
+  "name": "sample-test",
+  "version": "1.0.0",
+  "description": "Using Playwright and GitHub Actions, discover testing!",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CS4Kids/Sample-Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CS4Kids/Sample-Test/issues"
+  },
+  "homepage": "https://github.com/CS4Kids/Sample-Test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.22.1"
+  }
+}
