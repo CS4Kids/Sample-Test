@@ -1,2 +1,3 @@
 # Sample-Test
-Use to learn about testing automation
+
+Using Playwright and GitHub Actions, discover testing!
