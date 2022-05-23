@@ -9,7 +9,16 @@ test('analyze page', async ({ page }) => {
   await expect(title).toContainText('Passcode Test');
 });
 
-test('enter passcode', async ({ page }) => {
+test('enter invalid passcode', async ({ page }) => {
+  const message = await page.locator('li');
   await page.fill('input[type="password"]', 'abcdefg');
-  await page.click('button:has-text("Submit")');
+  await page.click('input:has-text("Submit")');
+  await expect(message).toContainText('Passcode invalid');
+});
+
+test('enter valid passcode', async ({ page }) => {
+  const message = await page.locator('li');
+  await page.fill('input[type="password"]', 'jhylahrlyz');
+  await page.click('input:has-text("Submit")');
+  await expect(message).toContainText('Passcode correct!');
 });
